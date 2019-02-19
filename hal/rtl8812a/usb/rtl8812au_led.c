@@ -49,6 +49,9 @@ SwLedOn_8812AU(
 	u8	LedCfg;
 	HAL_DATA_TYPE	*pHalData = GET_HAL_DATA(padapter);
 
+	// jnah Disable the LED completely. Hurts the astronauts eyeballs!
+	return;
+
 	if( (padapter->bSurpriseRemoved == _TRUE) || ( padapter->bDriverStopped == _TRUE)) {
 		return;
 	}
@@ -221,6 +224,9 @@ SwLedOn_8821AU(
 )
 {
 	u8	LedCfg;
+
+	// jnah Disable the LED completely. Hurts the astronauts eyeballs!
+	return;
 
 	if( (Adapter->bSurpriseRemoved == _TRUE) || ( Adapter->bDriverStopped == _TRUE)) {
 		return;
