@@ -16,7 +16,7 @@ All done as root:
 
 ```bash
 # install build dependencies
-apt install raspberrypi-kernel-headers bc
+apt install build-essential raspberrypi-kernel-headers bc
 
 # if you are targetting an older kernel, download the old kernel headers
 # otherwise skip this step
